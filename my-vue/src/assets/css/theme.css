@@ -5,7 +5,6 @@
     display: none;
 }
 
-
 body,
 button,
 input,
@@ -78,7 +77,7 @@ textarea {
     resize: none;
 }
 
-b,i {
+b, i {
     font-weight: normal;
 }
 
@@ -104,7 +103,6 @@ b,i {
     float: right;
 }
 
-
 /**
  * [display 影藏，显示]
  * @type {[type]}
@@ -122,7 +120,7 @@ b,i {
     display: inline-block;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
 
@@ -225,8 +223,6 @@ img {
     vertical-align: bottom;
 }
 
-
-
 /**
  * flex布局
  */
@@ -244,6 +240,7 @@ img {
     display: box;
     /* OLD - Android 4.4- */
 }
+
 .flex-item-center {
     /* 09版 */
     -webkit-box-align: center;
@@ -254,26 +251,32 @@ img {
     -o-align-items: center;
     align-items: center;
 }
- .align-center{
-     /* 09版 */
-     -webkit-box-align: center;
-     /* 12版 */
-     -webkit-align-items: center;
-     -moz-align-items: center;
-     -ms-align-items: center;
-     -o-align-items: center;
-     align-items: center;
- }
+
+.align-center {
+    /* 09版 */
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
 .justify-center {
     -webkit-box-pack: center;
     /*主轴对齐方式 旧写法*/
     -webkit-justify-content: center;
     justify-content: center;
 }
-.flex-grow_1{
+
+.flex-grow_1 {
     flex-grow: 1;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
 /*标签tag*/
 
@@ -294,6 +297,7 @@ img {
     align-content: flex-start;
     position: relative;
 }
+
 .nobor {
     border: none;
 }

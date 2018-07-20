@@ -15,6 +15,7 @@ module.exports = {
      //  '/api': config.hostApi
       '/api': {
         target: 'http://host805131605.s689.pppf.com.cn/php',
+        // target: 'http://www.server.com/',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''

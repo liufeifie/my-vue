@@ -77,11 +77,10 @@ export default {
 <style lang="less">
   @import "assets/css/index.less";
   #app {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     max-width: 750px;
     margin: 0 auto;
-    overflow: hidden;
   }
  /* #app {
     position: absolute;
@@ -102,20 +101,20 @@ export default {
     height: 4.4rem;
     line-height: 4.4rem;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
   }
   #main{
     overflow-y: auto;
     overflow-x: hidden;
-    height: 100%;
+    min-height: 100%;
   }
   #footer{
     height: 5rem;
     line-height: 5rem;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
   }

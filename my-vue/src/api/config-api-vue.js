@@ -9,5 +9,11 @@ module.exports = {
   },
   'pcx': {
     url: '/pcx.php'
+  },
+  'jsonp': {
+    url: '/cross_jsonp.php'
+  },
+  'iframe': {
+    url: 'cross_iframe.php'
   }
 }

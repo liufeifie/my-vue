@@ -1,5 +1,6 @@
 import * as api from '@/api/config-api-vue'
 import app from '@/api/create-api'
+const config = require('../../config')
 // let myApp = this._vm
 export default {
   GET ({commit, state, dispatch}, reqdata) {
@@ -11,7 +12,7 @@ export default {
       })
     })
   },
-  POST ({commit, state, dispatch}, reqdata) {
+  FETCH ({commit, state, dispatch}, reqdata) {
     if (reqdata instanceof Array) {
       let postArray = []
       let keyArray = []
@@ -61,8 +62,23 @@ export default {
       })
     }
   },
+  /* jsonp 跨域 */
+  JSONP ({commit, state, dispatch}, reqdata) {
+    return new Promise((resolve, reject) => {
+      try {
+        window.resdata = function (data) {
+          resolve(data)
+        }
+        let script = document.createElement('script')
+        script.src = config.dev.proxyTable['/api'].target + api[reqdata.urlKey].url + '?callback=resdata'
+        document.body.appendChild(script)
+      } catch (e) {
+        reject(e)
+      }
+    })
+  },
   USER_INFO ({commit, state, dispatch}) {
-    dispatch('POST', {urlKey: 'index'}).then((data) => {
+    dispatch('FETCH', {urlKey: 'index'}).then((data) => {
       if (data.code === '0000') {
         commit('SET_USER_INFO', data.data)
       } else {

@@ -1,11 +1,11 @@
 <template>
   <div>
-    <ul :style="flexbox" class="mt10 h60 border_solid_1 bcolor02">
+    <ul :style="flexbox" class="mt10 h60 b_solid_1 bcolor02">
       <li class="wp20 h40 lh40 tc" v-for="(item, key) in flexItem" :key="key"
           :style="{'background-color': item}" v-if="key < flexItemIndex">{{key}}
       </li>
     </ul>
-    <ul :style="flexbox" class="mt10 h60 border_solid_1 bcolor02">
+    <ul :style="flexbox" class="mt10 h60 b_solid_1 bcolor02">
       <li class="wp20 h40 lh40 tc" v-for="(item, key) in flexItem" :key="key"
           :style="{'background-color': item}">{{key}}
       </li>
@@ -19,7 +19,7 @@
               <h3 class="fbold f15" v-text="key">flex-direction</h3>
               <ul class="flex flex-item-center tc mt10 f1_3 minH3 lh30" style="flex-wrap: wrap;">
                 <li class="wp25 hp100 mt5" v-for="(prop, index) in props" :key="index">
-                  <p class="mr5 ws hp100 border_solid_1 bcolor05 border_ra_3"
+                  <p class="mr5 ws hp100 b_solid_1 bcolor05 b_ra_3"
                      :class="{'bgcolor02 color03': prop.active}"
                      @click.stop="selectProp(key, index)"
                      v-text="prop.prop">row</p>
