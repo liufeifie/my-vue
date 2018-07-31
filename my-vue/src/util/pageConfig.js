@@ -47,6 +47,11 @@ const clientTitleMixin = {
     if (typeof window !== 'undefined') {
       csetTitie(this)
     }
+  },
+  activated () {
+    if (typeof window !== 'undefined') {
+      csetTitie(this)
+    }
   }
 }
 

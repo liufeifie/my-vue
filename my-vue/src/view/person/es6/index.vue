@@ -1,37 +1,31 @@
 <template>
   <div>
     <ul class="f18 flex-wrap">
-      <router-link to="/person/es6/letConst" class="p10 bgcolor07 mb5 col01" tag="li">
-        <b>let 和 const 命令</b>
+      <li @click="detail(item, key)" class="p10 bgcolor07 mb5 col0"
+          v-for="(item, key) in listData" :key="key">
+        <b v-text="item.value">let 和 const 命令</b>
         <b class="fr">&gt;</b>
-      </router-link>
-      <router-link to="/person/es6/destructuring" class="p10 bgcolor07 mb5 col01" tag="li">
-        <b>解构赋值</b>
-        <b class="fr">&gt;</b>
-      </router-link>
-      <router-link to="/person/es6/string" class="p10 bgcolor07 mb5 col01" tag="li">
-        <b>字符串的扩展</b>
-        <b class="fr">&gt;</b>
-      </router-link>
-      <router-link to="/person/es6/promise" class="p10 bgcolor07 mb5 col01" tag="li">
-        <b>promise</b>
-        <b class="fr">&gt;</b>
-      </router-link>
-      <router-link to="/person/es6/array" class="p10 bgcolor07 mb5 col01" tag="li">
-        <b>Array</b>
-        <b class="fr">&gt;</b>
-      </router-link>
-      <router-link to="/person/es6/set" class="p10 bgcolor07 mb5 col01" tag="li">
-        <b>Set</b>
-        <b class="fr">&gt;</b>
-      </router-link>
+      </li>
     </ul>
   </div>
 </template>
 <script>
   export default {
     data: () => {
-      return {}
+      return {
+        listData: [
+          {value: 'let 和 const 命令', path: '/person/es6/letConst', id: 0},
+          {value: '解构赋值', path: '/person/es6/destructuring', id: 1},
+          {value: 'String 的扩展', path: '/person/es6/string', id: 2},
+          {value: 'Function 的扩展', path: '/person/es6/function', id: 3},
+          {value: 'Array 的扩展', path: '/person/es6/array', id: 4},
+          {value: 'Object 的扩展', path: '/person/es6/object', id: 5},
+          {value: 'Symbol 类型', path: '/person/es6/symbol', id: 6},
+          {value: 'SetMap', path: '/person/es6/setmap', id: 7},
+          {value: 'Proxy', path: '/person/es6/proxy', id: 8},
+          {value: 'promise', path: '/person/es6/promise', id: 111}
+        ]
+      }
     },
     pageConfig () {
       return {
@@ -44,7 +38,11 @@
     mounted () {
 
     },
-    methods: {},
+    methods: {
+      detail (item) {
+        this.goPush(item.path)
+      }
+    },
     components: {}
   }
 </script>

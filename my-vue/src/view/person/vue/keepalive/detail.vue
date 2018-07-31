@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <h1>孙路由</h1>
-    <router-link to="/person/router">路由首页</router-link>
-    <router-link to="/person/router/child">子路由</router-link>
+  <div style="height: 100rem;">
+    <h1>详情页</h1>
   </div>
 </template>
 <script>
@@ -12,7 +10,7 @@
     },
     pageConfig () {
       return {
-        title: '孙路由',
+        title: 'detail',
         bodyStyle: 'background-color: #fff;'
       }
     },

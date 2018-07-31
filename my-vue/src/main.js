@@ -10,6 +10,7 @@ import { createRouter } from './router'
 
 import pageConfig from './util/pageConfig'
 import methods from './util/methods'
+import MintUI from 'mint-ui'
 
 const store = createStore()
 const router = createRouter()
@@ -39,6 +40,9 @@ Vue.mixin({
   beforeRouteUpdate (to, from, next) {
     router.app.$mintUi.setLoading(false)
     next()
+  },
+  activated () {
+    router.app.$mintUi.setLoading(false)
   },
   mounted () {
     router.app.$mintUi.setLoading(false)

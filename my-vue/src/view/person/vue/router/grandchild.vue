@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>子路由</h1>
-    <router-link to="/person/router">路由首页</router-link>
-    <router-link to="/person/router/child/grandchild">孙路由</router-link>
+    <h1>孙路由</h1>
+    <router-link to="/person/vue/router">路由首页</router-link>
+    <router-link to="/person/vue/router/child">子路由</router-link>
   </div>
 </template>
 <script>
@@ -12,7 +12,7 @@
     },
     pageConfig () {
       return {
-        title: '子路由',
+        title: '孙路由',
         bodyStyle: 'background-color: #fff;'
       }
     },

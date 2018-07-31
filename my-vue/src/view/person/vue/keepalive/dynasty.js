@@ -1,0 +1,22 @@
+module.exports = [
+  {id: '20180723', name: '秦始皇', start: '-221', address: '秦朝'},
+  {id: '20180724', name: '刘邦', start: '-206', address: '西汉'},
+  {id: '20180725', name: '刘秀', start: '25', address: '东汉'},
+  {id: '20180726', name: '曹丕', start: '220', address: '魏朝'},
+  {id: '20180727', name: '刘备', start: '221', address: '蜀汉'},
+  {id: '20180728', name: '孙权', start: '222', address: '吴国'},
+  {id: '20180729', name: '司马炎', start: '265', address: '西晋'},
+  {id: '20180801', name: '司马睿', start: '317', address: '东晋'},
+  {id: '20180802', name: '杨坚', start: '581', address: '隋朝'},
+  {id: '20180803', name: '李渊', start: '618', address: '唐朝'},
+  {id: '20180804', name: '朱温', start: '967', address: '后梁'},
+  {id: '20180805', name: '李存勖', start: '923', address: '后唐'},
+  {id: '20180806', name: '石敬瑭', start: '936', address: '后晋'},
+  {id: '20180807', name: '刘知远', start: '947', address: '后汉'},
+  {id: '20180808', name: '郭威', start: '951', address: '后周'},
+  {id: '20180809', name: '赵匡胤', start: '960', address: '北宋'},
+  {id: '20180810', name: '赵构', start: '1127', address: '南宋'},
+  {id: '20180811', name: '忽必烈', start: '1206', address: '元朝'},
+  {id: '20180812', name: '朱元璋', start: '1138', address: '明朝'},
+  {id: '20180813', name: '努尔哈赤', start: '1616', address: '清朝'}
+]

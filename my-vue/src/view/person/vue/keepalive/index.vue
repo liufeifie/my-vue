@@ -1,6 +1,8 @@
 <template>
   <div>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 <script>
@@ -10,7 +12,7 @@
     },
     pageConfig () {
       return {
-        title: 'grandchild。template',
+        title: '动态组件 keep-keepalive',
         bodyStyle: 'background-color: #fff;'
       }
     },

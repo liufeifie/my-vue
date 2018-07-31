@@ -4,3 +4,6 @@ textarea {
     width: 100%;
     border: 1px solid #666;
 }
+.text-indent1{
+    text-indent: 1rem;
+}

@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="f18">
+  <div id="app" class="f18" :class="{'pt44': header, 'pb50': footer}">
     <header v-show="header" id="header" class="pl15 pr15 flex bgcolor06">
       <div id="headerLeft" class="wp25 col03" @click="leftEven(headerLeft)" v-html="headerLeft.html">
         <b>后退</b>
@@ -11,7 +11,7 @@
         <b>前进</b>
       </div>
     </header>
-    <main ref="main" id="main" :class="{'pt44': header, 'pb50': footer}">
+    <main ref="main" id="main">
       <transition name="bounce" mode="out-in">
         <!-- 不需要缓存的路由 -->
         <router-view></router-view>
@@ -75,9 +75,11 @@ export default {
 </script>
 
 <style lang="less">
-  @import "assets/css/index.less";
+  @import "assets/css/common/index.less";
+  html, body, #app, #main{
+    height: 100%;
+  }
   #app {
-    min-height: 100%;
     width: 100%;
     max-width: 750px;
     margin: 0 auto;
@@ -97,26 +99,36 @@ export default {
     margin: 0 auto;
     overflow: hidden;
   }*/
+  #header, #footer{
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform:translateX(-50%);
+    max-width: 750px;
+    margin: 0 auto;
+    z-index: 9;
+  }
   #header{
     height: 4.4rem;
     line-height: 4.4rem;
-    width: 100%;
-    position: fixed;
     top: 0;
-    left: 0;
   }
   #main{
+    position: relative;
+    top: 0;
+    left: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    min-height: 100%;
   }
   #footer{
     height: 5rem;
     line-height: 5rem;
-    width: 100%;
     position: fixed;
     bottom: 0;
-    left: 0;
   }
   #footer .router-link-active b {
     color: #FF0000;

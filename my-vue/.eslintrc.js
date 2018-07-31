@@ -34,6 +34,8 @@ module.exports = {
     'generator-star-spacing': 0, // 生成器函数前后空格
     'no-inner-declarations':[0], // 允许在嵌套代码块里声明函数
     'no-trailing-spaces':0, // 不允许在语句后存在多余的空格
+    'camelcase':0, // 驼峰
+    'require-v-for-key':0, // for 循环 key绑定
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }

@@ -27,7 +27,10 @@ export function createRouter () {
     routes: routerPaths
   })
   router.beforeEach((to, from, next) => {
-    if (!to.name) return router.push('/')
+    if (!to.name) {
+      router.app.$mintUi.setNotice(true, `${to.path}不存在`)
+      return router.push('/')
+    }
     router.app.$mintUi.setLoading(true)
     let store = router.app.$store
     store.dispatch('USER_INFO')
