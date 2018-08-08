@@ -40,8 +40,8 @@
     </div>
     <h3>rest 参数</h3>
     <p class="f14">ES6 引入 rest 参数（形式为...变量名），用于获取函数的多余参数，这样就不需要使用arguments对象了。rest 参数搭配的变量是一个数组，该变量将多余的参数放入数组中。</p>
-    <p class="f12 fbold col02">rest 参数之后不能再有其他参数</p>
-    <p class="f12 fbold col02">函数的length属性，不包括 rest 参数。</p>
+    <p class="f12 fbold color02">rest 参数之后不能再有其他参数</p>
+    <p class="f12 fbold color02">函数的length属性，不包括 rest 参数。</p>
     <div class="f14">
       <textarea>
         function add(...values) {

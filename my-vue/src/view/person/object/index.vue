@@ -38,7 +38,7 @@
     <p class="f16">Object.defineProperty(o,descriptors)方法用于创建或配置对象的多个属性的描述符，返回配置后的对象</p>
     <h4>Object.create()</h4>
     <p class="f16">Object.create(proto,descriptors)方法使用指定的原型和属性来创建一个对象</p>
-    <h3 class="col02">对象深拷贝</h3>
+    <h3 class="color02">对象深拷贝</h3>
     <textarea class="h80">
       function deepClone (obj) {
       return JSON.parse(JSON.stringify(obj))

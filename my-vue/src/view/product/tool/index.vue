@@ -1,11 +1,9 @@
 <template>
-  <div class="pl15 pr15">
-    <ul class="flex f18 tc flex-wrap">
-      <li class="p10 bgcolor07 wp40">
-        <router-link to="/product/tool" class="color01">常用的方法</router-link>
-      </li>
-    </ul>
-  </div>
+    <div class="pl15 pr15">
+        <ul class="f18">
+            <router-link to="/product/tool/thousands" class="color01 p10 bgcolor07 mt10" tag="li">千分位</router-link>
+        </ul>
+    </div>
 </template>
 <script>
   export default {
@@ -14,7 +12,7 @@
     },
     pageConfig () {
       return {
-        title: 'index',
+        title: '小case',
         bodyStyle: 'background-color: #fff;'
       }
     },

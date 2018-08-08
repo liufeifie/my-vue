@@ -1,13 +1,13 @@
 <template>
   <div id="app" class="f18" :class="{'pt44': header, 'pb50': footer}">
     <header v-show="header" id="header" class="pl15 pr15 flex bgcolor06">
-      <div id="headerLeft" class="wp25 col03" @click="leftEven(headerLeft)" v-html="headerLeft.html">
+      <div id="headerLeft" class="wp25 color03" @click="leftEven(headerLeft)" v-html="headerLeft.html">
         <b>后退</b>
       </div>
-      <div id="headerCenter" class="wp50 tc col03">
+      <div id="headerCenter" class="wp50 tc color03">
         <b>{{pageTitle}}</b>
       </div>
-      <div id="headerRight" class="wp25 tr col03" @click="rightEven(headerRight)" v-html="headerRight.html">>
+      <div id="headerRight" class="wp25 tr color03" @click="rightEven(headerRight)" v-html="headerRight.html">>
         <b>前进</b>
       </div>
     </header>
@@ -18,7 +18,7 @@
       </transition>
     </main>
     <footer v-show="footer" id="footer" class="bgcolor01">
-      <ul class="flex col03 tc">
+      <ul class="flex color03 tc">
        <router-link class="flex-grow_1" to="/" tag="li" exact><b>首页</b></router-link>
        <router-link class="flex-grow_1" to="/product" tag="li" exact><b>产品</b></router-link>
        <router-link class="flex-grow_1" to="/activity" tag="li" exact><b>活动</b></router-link>

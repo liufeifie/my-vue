@@ -13,8 +13,8 @@
       <li>Symbol 值也可以转为布尔值，但是不能转为数值。</li>
     </ul>
     <h3>作为属性名的 Symbol</h3>
-    <p class="f12 col02 fbold">Symbol 值作为对象属性名时，不能用点运算符。</p>
-    <p class="f12 col02 fbold">在对象的内部，使用 Symbol 值定义属性时，Symbol 值必须放在方括号之中。</p>
+    <p class="f12 color02 fbold">Symbol 值作为对象属性名时，不能用点运算符。</p>
+    <p class="f12 color02 fbold">在对象的内部，使用 Symbol 值定义属性时，Symbol 值必须放在方括号之中。</p>
     <div class="f14">
       <textarea>
         let mySymbol = Symbol();
@@ -48,7 +48,7 @@
       console.log(Symbol.keyFor(s1)) // foo
       console.log(Symbol.keyFor(s3)) // undefined
     </pre>
-    <p class="f13 col02">Symbol.for为 Symbol 值登记的名字，是全局环境的，可以在不同的 iframe 或 service worker 中取到同一个值。</p>
+    <p class="f13 color02">Symbol.for为 Symbol 值登记的名字，是全局环境的，可以在不同的 iframe 或 service worker 中取到同一个值。</p>
   </div>
 </template>
 <script>

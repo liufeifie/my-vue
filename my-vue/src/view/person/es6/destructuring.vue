@@ -23,7 +23,7 @@
     <h3>Object 的解构赋值 </h3>
     <div class="f14">
       <p>对象的解构与数组有一个重要的不同。数组的元素是按次序排列的，变量的取值由它的位置决定；
-        而对象的属性没有次序，<b class="fbold col02">变量必须与属性同名</b>，才能取到正确的值。</p>
+        而对象的属性没有次序，<b class="fbold color02">变量必须与属性同名</b>，才能取到正确的值。</p>
       <textarea>
         { bar, foo, baz } = { foo: "aaa", bar: "bbb" };
         ==>bar="aaa";foo="bbb";baz=undefined

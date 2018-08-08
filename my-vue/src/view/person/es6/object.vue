@@ -21,7 +21,7 @@
     <p class="f14">来比较两个值是否严格相等，与严格比较运算符（===）的行为基本一致。</p>
     <h3>Object.assign(target, source1, source2, ...)</h3>
     <p class="f14">对象的合并，将源对象（source）的所有可枚举属性，复制到目标对象（target）。</p>
-    <p class="f12 col02">Object.assign方法的第一个参数是目标对象，后面的参数都是源对象。</p>
+    <p class="f12 color02">Object.assign方法的第一个参数是目标对象，后面的参数都是源对象。</p>
     <p class="f13 fbold">Object.assign方法实行的是浅拷贝;同名属性的替换;数组的处理;取值函数的处理</p>
     <h4 class="mt10">对象的描述属性</h4>
     <ul class="f12 fbold pl10">
@@ -78,7 +78,7 @@
     </ul>
     <h3>super 关键字 </h3>
     <p class="f14">this关键字总是指向函数所在的当前对象，ES6 又新增了另一个类似的关键字super，指向当前对象的原型对象。</p>
-    <p class="fbold col02 f12">注意，super关键字表示原型对象时，只能用在对象的方法之中，用在其他地方都会报错。</p>
+    <p class="fbold color02 f12">注意，super关键字表示原型对象时，只能用在对象的方法之中，用在其他地方都会报错。</p>
     <h3>Object.keys()，Object.values()，Object.entries()</h3>
     <ul class="f14">
       <li>
@@ -99,10 +99,10 @@
     <h3>解构赋值</h3>
     <p class="f14">对象的解构赋值用于从一个对象取值，分配到指定的对象上面。</p>
     <p class="f14">解构赋值必须是最后一个参数，否则会报错;解构赋值是浅拷贝。</p>
-    <p class="f13 col02">{ x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };</p>
+    <p class="f13 color02">{ x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };</p>
     <h3>扩展运算符</h3>
     <p class="f14">对象的扩展运算符（...）用于取出参数对象的所有可遍历属性，拷贝到当前对象之中。</p>
-    <p class="f13 col02">let z = { a: 3, b: 4 }; let n = { ...z };</p>
+    <p class="f13 color02">let z = { a: 3, b: 4 }; let n = { ...z };</p>
   </div>
 </template>
 <script>

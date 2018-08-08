@@ -1,7 +1,7 @@
 <template>
   <div class="pl15 pr15 pb20 pt10">
     <ul class="flex tc fbold pb5 f18 b_solid_b_1 bcolor10">
-      <li class="wp25 ws" :class="currentIndex===index ? 'col02' : ''"
+      <li class="wp25 ws" :class="currentIndex===index ? 'color02' : ''"
           v-for="(item, index) in indexVal" :key="index"
           @click="sortFun(index)" v-text="item.val">序列号</li>
     </ul>

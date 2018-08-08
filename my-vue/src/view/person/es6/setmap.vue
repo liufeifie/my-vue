@@ -5,7 +5,7 @@
         <h3 class="mt10">/去除数组的重复成员</h3>
         <p class="f16">[...new Set(array)]</p>
         <p class="f16"> Array.from(new Set(array));</p>
-        <p class="f13 col02 fbold">Array.from方法可以将 Set 结构转为数组。</p>
+        <p class="f13 color02 fbold">Array.from方法可以将 Set 结构转为数组。</p>
         <h3 class="mt10">Set 实例的属性和方法</h3>
         <div class="f16">
             <p>Set 结构的实例有以下属性。</p>
@@ -21,7 +21,7 @@
         <h3>Map</h3>
         <p class="f14">JavaScript 的对象（Object），本质上是键值对的集合（Hash 结构），但是传统上只能用字符串当作键。为了解决这个问题，ES6 提供了 Map
             数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。</p>
-        <p class="f12 fbold col02">map对象可以接受对象作为键名，而传统的对象只接受字符串作为键名。</p>
+        <p class="f12 fbold color02">map对象可以接受对象作为键名，而传统的对象只接受字符串作为键名。</p>
 
     </div>
 </template>

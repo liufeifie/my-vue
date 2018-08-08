@@ -6,7 +6,7 @@
     <p class="mt5 f12">块级元素可以使用 Flex 布局:  <b class="fbold">display: flex;</b></p>
     <p class="mt5 f12">Webkit 内核的浏览器，必须加上-webkit前缀:</p>
     <p class="f12 fbold tr">display: -webkit-flex; /* Safari */   display: flex;</p>
-    <p class="mt5 f1 fbold col02">注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。</p>
+    <p class="mt5 f1 fbold color02">注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。</p>
     <h3 class="mt10 f14">二、容器的属性</h3>
     <p class="f12 lh20">
       <b class="fbold">2.1 flex-direction: row | row-reverse | column | column-reverse; </b> <br>
