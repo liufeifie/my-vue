@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+
+.border_solid_1{
+    border-width: 1px;
+    border-style: solid;
+}
+.b_ra_3{
+    border-radius: 3px;
+}

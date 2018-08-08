@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/******单位******/
+@one: 0.1rem;
+
+/******公用color变量******/
+@color0: #000;
+@color1: #FF0000;
+@color2: #00FF00;
+@color3: #0000FF;
+@color4: #FFFFFF;
+@color5: #f5ae19;
+@color6: #0e84ed;
+@color7: #313131;
+
+/******公用函数******/
+/*****color******/
+.col(@c) {
+  color: @c;
+}
+/*****background-color******/
+.bg(@c) {
+  background-color: @c;
+}
+
+.b_col(@c){
+  border-color: @c;
+}
+
+
+
+
+
+.common(100);
+.common(@n, @i:0) when (@i=<@n) {
+
+  /*******margin********/
+  .ml@{i} {
+    margin-left: @i*@one;
+  }
+  .ml_@{i} {
+    margin-left: -@i*@one;
+  }
+  .mr@{i} {
+    margin-right: @i*@one;
+  }
+  .mr_@{i} {
+    margin-right: -@i*@one;
+  }
+  .mt@{i} {
+    margin-top: @i*@one;
+  }
+  .mt_@{i} {
+    margin-top: -@i*@one;
+  }
+  .mb@{i} {
+    margin-bottom: @i*@one;
+  }
+  .mb_@{i} {
+    margin-bottom: -@i*@one;
+  }
+  .m@{i} {
+    margin: @i*@one;
+  }
+  .m_@{i} {
+    margin: -@i*@one;
+  }
+  .mlp@{i} {
+    margin-left: @i/100*100%;
+  }
+  .mrp@{i} {
+    margin-right: @i/100*100%;
+  }
+  .mtp@{i} {
+    margin-top: @i/100*100%;
+  }
+  .mbp@{i} {
+    margin-bottom: @i/100*100%;
+  }
+
+
+
+  /*******padding********/
+  .pl@{i} {
+    padding-left: @i*@one;
+  }
+  .pr@{i} {
+    padding-right: @i*@one;
+  }
+  .pt@{i} {
+    padding-top: @i*@one;
+  }
+  .pb@{i} {
+    padding-bottom: @i*@one;
+  }
+  .p@{i} {
+    padding: @i*@one;
+  }
+  .plp@{i} {
+    padding-left: @i/100*100%;
+  }
+  .prp@{i} {
+    padding-right: @i/100*100%;
+  }
+  .ptp@{i} {
+    padding-top: @i/100*100%;
+  }
+  .pbp@{i} {
+    padding-bottom: @i/100*100%;
+  }
+
+
+  /*******font********/
+  .f@{i} {
+    font-size: @i*@one;
+  }
+  /*******height********/
+  .h@{i} {
+    height: @i*@one;
+  }
+  .hp@{i} {
+    height: @i/100*100%;
+  }
+  .lh@{i} {
+    line-height: @i*@one;
+  }
+  .lhp@{i} {
+    line-height: @i/100*100%;
+  }
+
+
+  /*******width********/
+  .w@{i} {
+    width: @i*@one;
+  }
+  .wp@{i} {
+    width: @i/100*100%;
+  }
+
+
+  /*******position top,bottom,left,right********/
+  .t@{i} {
+    top: @i*@one;
+  }
+  .t_@{i} {
+    top: -@i*@one;
+  }
+  .b@{i} {
+    bottom: @i*@one;
+  }
+  .b_@{i} {
+    bottom: -@i*@one;
+  }
+  .l@{i} {
+    left: @i*@one;
+  }
+  .l_@{i} {
+    left: -@i*@one;
+  }
+  .r@{i} {
+    right: @i*@one;
+  }
+  .r_@{i} {
+    right: -@i*@one;
+  }
+
+  /*****递归循环编译******/
+  .common(@n, @i+1);
+}
+
+
