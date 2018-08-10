@@ -14,5 +14,10 @@ export default [
     name: 'tool-thousands',
     meta: {header: true, isAuth: true, footer: true},
     component: (resolve) => require(['@/view/product/tool/thousands'], resolve)
+  }, {
+    path: '/product/tool/time',
+    name: 'tool-time',
+    meta: {header: true, isAuth: true, footer: true},
+    component: (resolve) => require(['@/view/product/tool/time'], resolve)
   }
 ]

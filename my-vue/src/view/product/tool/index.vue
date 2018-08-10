@@ -2,6 +2,7 @@
     <div class="pl15 pr15">
         <ul class="f18">
             <router-link to="/product/tool/thousands" class="color01 p10 bgcolor07 mt10" tag="li">千分位</router-link>
+            <router-link to="/product/tool/time" class="color01 p10 bgcolor07 mt10" tag="li">时间</router-link>
         </ul>
     </div>
 </template>

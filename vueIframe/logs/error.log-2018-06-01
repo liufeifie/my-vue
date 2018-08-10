@@ -1,8 +1,0 @@
-[2018-06-01 10:13:10.877] [INFO] error - SEND_END:2018-6-1 10:13:10:539[/api/login/doLogin]
-        REQUEST:{"token":"e15008d06bab4e50b260173b403e6ed11527765718394","userId":"","version":"1.0","host":"http://10.12.5.144:8085/phone","data":{"id":"test1"}};RESPONSE:{"head":{"message":"","code":404}};
-[2018-06-01 10:13:24.208] [INFO] error - SEND_END:2018-6-1 10:13:24:102[/api/login/doLogin]
-        REQUEST:{"token":"e15008d06bab4e50b260173b403e6ed11527765718394","userId":"","version":"1.0","host":"http://10.12.5.144:8085/phone","data":{"id":"test1"}};RESPONSE:{"head":{"message":"","code":404}};
-[2018-06-01 10:13:38.690] [INFO] error - SEND_END:2018-6-1 10:13:38:647[/api/login/doLogin]
-        REQUEST:{"token":"e15008d06bab4e50b260173b403e6ed11527765718394","userId":"","version":"1.0","host":"http://10.12.5.144:8085/phone","data":{"id":"test1"}};RESPONSE:{"head":{"message":"","code":404}};
-[2018-06-01 10:13:52.146] [INFO] error - SEND_END:2018-6-1 10:13:51:983[/api/login/doLogin]
-        REQUEST:{"token":"e15008d06bab4e50b260173b403e6ed11527765718394","userId":"","version":"1.0","host":"http://10.12.5.144:8085/phone","data":{"id":"test1"}};RESPONSE:{"head":{"message":"","code":404}};

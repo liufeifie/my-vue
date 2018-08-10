@@ -1,5 +1,6 @@
 <template>
     <div class="pl15 pr15 f18 color05">
+        <h3>千分位</h3>
         <p v-for="(item, key) in dataList" :key="key" class="mt5 mb5">{{item}} => {{item | thousands}}</p>
     </div>
 </template>
@@ -29,16 +30,6 @@
           return (num || 0).toString().replace(/(\d)(?=(\d{3})+\.)/g, '$1,') // 小数点
         }
         return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,') // 不含小数点
-      },
-      toThousands (num) {
-        num = (num || 0).toString()
-        let result = ''
-        while (num.length > 3) {
-          result = ',' + num.slice(-3) + result
-          num = num.slice(0, num.length - 3)
-        }
-        if (num) { result = num + result }
-        return result
       }
     },
     components: {}
