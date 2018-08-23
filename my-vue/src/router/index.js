@@ -33,7 +33,7 @@ export function createRouter () {
     }
     router.app.$mintUi.setLoading(true)
     let store = router.app.$store
-    store.dispatch('USER_INFO')
+    // store.dispatch('USER_INFO')
     let meta = to.meta || {}
     store.commit('SET_HEADER', meta.header)
     store.commit('SET_FOOTER', meta.footer)

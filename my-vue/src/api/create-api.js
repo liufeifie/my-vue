@@ -49,6 +49,8 @@ export default {
   },
   post: (urls, data) => {
     data = Object.assign({}, option, data)
+    // data = {p: JSON.stringify(option), data: JSON.stringify(data)}
+    // console.log(data, qs.stringify(data))
     let date = new Date()
     let y = date.getFullYear()
     let m = date.getMonth() + 1

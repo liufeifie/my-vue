@@ -10,12 +10,13 @@ import { createRouter } from './router'
 
 import pageConfig from './util/pageConfig'
 import methods from './util/methods'
-import MintUI from 'mint-ui'
+import BScroll from 'better-scroll'
 
 const store = createStore()
 const router = createRouter()
 
 // Vue.use(MintUI)
+Vue.prototype.$BScroll = BScroll
 Vue.prototype.$mintUi = mintUi
 Object.keys(filters).forEach((item) => {
   Vue.filter(item, filters[item])

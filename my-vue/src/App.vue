@@ -31,6 +31,20 @@
 <script>
 export default {
   name: 'App',
+  data: () => {
+    return {
+      scroll: ''
+    }
+  },
+  created () {
+    /* this.$nextTick(() => {
+      this.scroll = new this.$BScroll(this.$refs.main, {
+        bounce: true,
+        scrollY: true,
+        preventDefault: false
+      })
+    }) */
+  },
   mounted () {},
   methods: {
     leftEven (headerLeft) {
@@ -76,13 +90,16 @@ export default {
 
 <style lang="less">
   @import "assets/css/common/index.less";
-  html, body, #app, #main{
+  html, body, #app{
+    position: fixed;
+    top: 0;
+    bottom: 0;
     height: 100%;
-  }
-  #app {
     width: 100%;
+    overflow: hidden;
     max-width: 750px;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
  /* #app {
     position: absolute;
@@ -101,7 +118,7 @@ export default {
   }*/
   #header, #footer{
     width: 100%;
-    position: fixed;
+    position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -118,16 +135,19 @@ export default {
     top: 0;
   }
   #main{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    padding-top: 4.4rem;
+    padding-bottom: 5rem;
   }
   #footer{
     height: 5rem;
     line-height: 5rem;
-    position: fixed;
     bottom: 0;
   }
   #footer .router-link-active b {

@@ -19,5 +19,25 @@ export default [
     name: 'tool-time',
     meta: {header: true, isAuth: true, footer: true},
     component: (resolve) => require(['@/view/product/tool/time'], resolve)
+  }, {
+    path: '/product/better-scroll',
+    name: 'better-scroll',
+    meta: {header: true, isAuth: true, footer: true},
+    component: (resolve) => require(['@/view/product/better-scroll'], resolve)
+  }, {
+    path: '/product/vux',
+    name: 'vux',
+    meta: {header: true, isAuth: true, footer: true},
+    component: (resolve) => require(['@/view/product/vux'], resolve)
+  }, {
+    path: '/product/vux/pull',
+    name: 'vux_pull',
+    meta: {header: true, isAuth: true, footer: true},
+    component: (resolve) => require(['@/view/product/vux/pull'], resolve)
+  }, {
+    path: '/product/lock',
+    name: 'lock',
+    meta: {header: true, isAuth: true, footer: true},
+    component: (resolve) => require(['@/view/product/lock'], resolve)
   }
 ]

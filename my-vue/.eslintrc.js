@@ -30,6 +30,8 @@ module.exports = {
     'prefer-promise-reject-errors': 0, // Promise 的 reject 中可以字面量或传入 Error 对象
     // allow paren-less arrow functions
     'arrow-parens': 0, // 允许箭头函数参数使用括号
+    'one-var': 0, // 允许var
+    'new-cap': 0, // 允许var
     // allow async-await
     'generator-star-spacing': 0, // 生成器函数前后空格
     'no-inner-declarations':[0], // 允许在嵌套代码块里声明函数
