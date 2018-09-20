@@ -24,7 +24,8 @@
           {value: 'SetMap', path: '/person/es6/setmap', id: 7},
           {value: 'Proxy', path: '/person/es6/proxy', id: 8},
           {value: 'promise', path: '/person/es6/promise', id: 111},
-          {value: 'GeneratorAsync', path: '/person/es6/GeneratorAsync', id: 111}
+          {value: 'GeneratorAsync', path: '/person/es6/GeneratorAsync', id: 111},
+          {value: 'class', path: '/person/es6/class', id: 111}
         ]
       }
     },

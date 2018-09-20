@@ -133,6 +133,11 @@ export default [
     meta: {header: true, isAuth: true, footer: true},
     component: (resolve) => require(['@/view/person/es6/generatorAsync'], resolve)
   }, {
+    path: '/person/es6/class',
+    name: 'class',
+    meta: {header: true, isAuth: true, footer: true},
+    component: (resolve) => require(['@/view/person/es6/class'], resolve)
+  }, {
     path: '/person/ajax',
     name: 'ajax',
     meta: {header: true, isAuth: true, footer: true},

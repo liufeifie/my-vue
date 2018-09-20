@@ -24,8 +24,8 @@ export function createStore () {
       },
       pageTitle: ''
     },
-    actions,
-    mutations,
-    getters
+    actions, // dispatch(action方法名, 参数)
+    mutations, // commit(mutations方法名, 参数)
+    getters // getters(getters方法名)
   })
 }

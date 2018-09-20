@@ -9,16 +9,28 @@
                 </cell>
             </router-link>
         </group>
+         <group :title="'Default format: YYYY-MM-DD'">
+          <datetime
+            v-model="value1"
+            @on-change="change"
+            :title="'Birthday'"
+            :clear-text="'clear-text'"
+            @on-cancel="cancel"
+            @on-confirm="confirm"
+            @on-hide="hide">
+          </datetime>
+    </group>
     </div>
 </template>
 <script>
-  import { Group, Cell } from 'vux'
+  import { Group, Cell, Datetime } from 'vux'
   export default {
     data: () => {
       return {
         dataList: [
           {title: '图标', value: 'icon'}
-        ]
+        ],
+        value1: ''
       }
     },
     pageConfig () {
@@ -32,10 +44,25 @@
     mounted () {
 
     },
-    methods: {},
+    methods: {  
+       change (value) {
+        console.log('change', value)
+      },
+       confirm (value) {
+        console.log('confirm', value)
+        console.log('current value', this.value1)
+      },
+      cancel (value) {
+        console.log('cancel', value)
+      },
+      hide (value) {
+        console.log('hide', value)
+      }
+    },
     components: {
       Group,
-      Cell
+      Cell,
+      Datetime
     }
   }
 </script>
